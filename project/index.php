@@ -1,6 +1,6 @@
 <?php
    /*  // connecting to database
-    $conn=mysqli_connect('localhost','harshith','qwerty123','todoapp');
+    $conn=mysqli_connect('localhost','Yourusename','<password>','todoapp');
 
     // check connection
     if(!$conn){
