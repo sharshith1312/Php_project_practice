@@ -2,10 +2,9 @@
     include('config/db_connect.php');
     $erros=['email'=>'',"title"=>'','list'=>''];
     $email=$title=$list='';
-    // $_POST AND $_POST are the global arrays which are containing the form information
-    // we need to send these info only when the form is submit else send only the html info
+    
     if(isset($_POST['submit'])){
-        // if submit is clicked in global arrays value is being set hence we are checking that
+        
         // print_r($_POST);
         // echo htmlspecialchars($_POST["email"]);
         // echo htmlspecialchars($_POST["title"]);
@@ -53,8 +52,7 @@
         }
 
         if(array_filter($erros)){
-            // if all the values in the associative array all are empty strings then it 
-            // will return false if the values are present then will return true
+     
             echo 'errors in the form';
         }
         else{
